@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "99cd14f8ae840994075e683b0a9115c3",
+    "revision": "4b11e436d2c453205d2454b00e95a47a",
     "url": "/portfolio-ale-rumbo/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-ale-rumbo/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "6f9fad5258cdd073f0d6",
+    "revision": "6e6f3bd66b890d69e8b4",
     "url": "/portfolio-ale-rumbo/static/css/main.9e883fa8.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-ale-rumbo/static/js/2.c69deb9b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6f9fad5258cdd073f0d6",
-    "url": "/portfolio-ale-rumbo/static/js/main.3d2838b2.chunk.js"
+    "revision": "6e6f3bd66b890d69e8b4",
+    "url": "/portfolio-ale-rumbo/static/js/main.fc2d6e71.chunk.js"
   },
   {
     "revision": "8d276c26aa4aa315cb1c",

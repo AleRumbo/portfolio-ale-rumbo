@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/portfolio-ale-rumbo/precache-manifest.64aaf8cc25589b187adb3cf80c901eef.js"
+  "/portfolio-ale-rumbo/precache-manifest.602af6a1dd839024fc35e604dd8d128d.js"
 );
 
 self.addEventListener('message', (event) => {

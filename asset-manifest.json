@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio-ale-rumbo/static/css/main.9e883fa8.chunk.css",
-    "main.js": "/portfolio-ale-rumbo/static/js/main.3d2838b2.chunk.js",
-    "main.js.map": "/portfolio-ale-rumbo/static/js/main.3d2838b2.chunk.js.map",
+    "main.js": "/portfolio-ale-rumbo/static/js/main.fc2d6e71.chunk.js",
+    "main.js.map": "/portfolio-ale-rumbo/static/js/main.fc2d6e71.chunk.js.map",
     "runtime-main.js": "/portfolio-ale-rumbo/static/js/runtime-main.5fd9dd54.js",
     "runtime-main.js.map": "/portfolio-ale-rumbo/static/js/runtime-main.5fd9dd54.js.map",
     "static/css/2.af3c1da9.chunk.css": "/portfolio-ale-rumbo/static/css/2.af3c1da9.chunk.css",
     "static/js/2.c69deb9b.chunk.js": "/portfolio-ale-rumbo/static/js/2.c69deb9b.chunk.js",
     "static/js/2.c69deb9b.chunk.js.map": "/portfolio-ale-rumbo/static/js/2.c69deb9b.chunk.js.map",
     "index.html": "/portfolio-ale-rumbo/index.html",
-    "precache-manifest.64aaf8cc25589b187adb3cf80c901eef.js": "/portfolio-ale-rumbo/precache-manifest.64aaf8cc25589b187adb3cf80c901eef.js",
+    "precache-manifest.602af6a1dd839024fc35e604dd8d128d.js": "/portfolio-ale-rumbo/precache-manifest.602af6a1dd839024fc35e604dd8d128d.js",
     "service-worker.js": "/portfolio-ale-rumbo/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/portfolio-ale-rumbo/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.9e883fa8.chunk.css.map": "/portfolio-ale-rumbo/static/css/main.9e883fa8.chunk.css.map",
@@ -27,6 +27,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.c69deb9b.chunk.js",
     "static/css/main.9e883fa8.chunk.css",
-    "static/js/main.3d2838b2.chunk.js"
+    "static/js/main.fc2d6e71.chunk.js"
   ]
 }
