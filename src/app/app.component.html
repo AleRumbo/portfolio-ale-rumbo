@@ -1,0 +1,174 @@
+<div class="page" id="top">
+  <header class="header">
+    <div class="container nav">
+      <div class="brand" (click)="goTo('top')">
+        <div class="brandText">
+          <div class="name">{{ profile.name }}</div>
+          <div class="role">{{ profile.role2 }} · {{ profile.location }}</div>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <button type="button" class="link" (click)="goTo('servicios')">Servicios</button>
+        <button type="button" class="link" (click)="goTo('stack')">Stack</button>
+        <button type="button" class="link" (click)="goTo('proyectos')">Proyectos</button>
+        <button type="button" class="link primary" (click)="goTo('contacto')">Contacto</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="heroLeft">
+        <h1>{{ profile.role }}</h1>
+        <p class="subtitle">{{ profile.headline }}</p>
+
+        <div class="meta">
+          <span class="pill">📍 {{ profile.location }}</span>
+          <span class="pill">⏱️ {{ profile.availability }}</span>
+          <span class="pill">💼 {{ profile.experience }}</span>
+        </div>
+
+        <div class="cta">
+          <button class="btn primary" (click)="goTo('proyectos')">Ver proyectos</button>
+          <button class="btn" (click)="goTo('contacto')">Contactarme</button>
+        </div>
+
+      </div>
+
+      <div class="heroRight">
+        <div class="card highlight">
+          <div class="cardTitle">En qué te puedo ayudar</div>
+          <p class="muted">
+            Desarrollo y mantenimiento de aplicaciones web con foco en estabilidad, performance y una buena UX.
+          </p>
+          <div class="tags">
+            <span class="tag">Angular</span>
+            <span class="tag">.NET</span>
+            <span class="tag">SQL Server</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section">
+      <h2>Servicios</h2>
+      <div class="grid2">
+        <div class="card">
+          <ul class="bullets">
+            <li *ngFor="let s of services">{{ s }}</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="cardTitle">Cómo trabajo</div>
+          <ol class="steps">
+            <li><b>Diagnóstico</b>: entiendo el problema y el alcance real.</li>
+            <li><b>Plan por entregas</b>: iteraciones cortas, visibles.</li>
+            <li><b>Implementación</b>: código prolijo y pruebas.</li>
+            <li><b>Entrega</b>: documentación mínima y soporte.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section">
+      <h2>Stack</h2>
+      <div class="grid3">
+        <div class="card" *ngFor="let g of stack">
+          <div class="cardTitle">{{ g.group }}</div>
+          <div class="tags">
+            <span class="tag" *ngFor="let it of g.items">{{ it }}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section">
+      <h2>Proyectos destacados</h2>
+
+      <div class="projects">
+        <article class="card project" *ngFor="let p of projects">
+          <div class="projectHead">
+            <div>
+              <h3>{{ p.title }}</h3>
+              <div class="muted">{{ p.subtitle }}</div>
+            </div>
+          </div>
+
+          <div class="grid3">
+            <div>
+              <div class="miniTitle">Problema</div>
+              <ul class="bullets">
+                <li *ngFor="let x of p.problem">{{ x }}</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="miniTitle">Solución</div>
+              <ul class="bullets">
+                <li *ngFor="let x of p.solution">{{ x }}</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="miniTitle">Impacto</div>
+              <ul class="bullets">
+                <li *ngFor="let x of p.impact">{{ x }}</li>
+              </ul>
+
+              <div class="miniTitle">Tecnologías</div>
+              <div class="tags">
+                <span class="tag" *ngFor="let t of p.tech">{{ t }}</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <div class="grid2">
+        <div class="card">
+          <div class="cardTitle">Contacto</div>
+          <p class="muted">
+            Disponible para proyectos freelance part-time: Angular, APIs .NET y SQL Server.
+            Alcance definido, entregas por iteraciones y código prolijo.
+          </p>
+
+          <div class="contact">
+            <div><b>Email:</b> {{ profile.contact.email }}</div>
+          </div>
+
+          <div class="cta">
+            <a class="btn primary" [href]="'mailto:' + profile.contact.email">Enviar email</a>
+            <a class="btn" [href]="profile.contact.linkedin" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardTitle">¿Qué puedo aportar?</div>
+          <div class="copyBox">
+            ✔ Corrección de bugs y mejoras en aplicaciones existentes<br />
+            ✔ Desarrollo de módulos y pantallas en Angular<br />
+            ✔ APIs REST en .NET + validaciones y roles<br />
+            ✔ Stored Procedures y optimización en SQL Server<br />
+            ✔ Entrega por iteraciones con comunicación clara
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="muted">© {{ profile.name }} · Portfolio {{ currentYear }}</div>
+    </footer>
+
+  </main>
+</div>
